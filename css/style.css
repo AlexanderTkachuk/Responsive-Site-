@@ -148,7 +148,8 @@ header {
 .heading {
 	display: flex;
 	align-items: center;
-	margin-bottom: 150px;
+	max-width: 90%;
+	margin: 0 auto 150px;
 }
 
 .heading h2 {
@@ -376,4 +377,95 @@ header {
 	height: 4px;
 	background-color: #f39c12;
 	margin: 0 auto 20px;
+}
+
+/*box-team*/
+
+.box-team {
+	padding: 105px 0 100px;
+}
+
+.team-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.team-list__item {
+	width: 268px;
+	padding: 25px 15px 30px;
+	border-top: 4px solid transparent;
+	text-align: center;
+}
+
+.team-list__item:hover { 
+	background: #f0f0f0;
+	border-top: 4px solid #f39c12;
+}
+
+.team-list__img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 6px solid #f2f2f2;
+	border-radius: 50%;
+	background: #e8f8f4;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 0 auto 25px;
+}
+
+.team-list__img::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 202px;
+	height: 202px;
+	border-radius: 50%;
+	border: 1px solid #e6e6e6;
+}
+
+.team-list__img i {
+	color: white;
+	font-size: 62px;
+}
+
+.team-list__img img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	display: block;
+}
+
+.team-list__item h6 {
+	margin-bottom: 5px;
+}
+
+.team-list__job {
+	color: #999999;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: "Lato", sans-serif;
+}
+
+.team-list__job::after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 25px;
+	height: 4px;
+	background: #000;
+	margin-top: 11px;
+	margin-bottom: 14px;
+}
+
+.team-list__item:hover .team-list__job::after {
+	background: #e74c3c;
+}
+
+.team-list__item p {
+	font-size: 16px;
+	line-height: 20px;
+	color: #737373;
 }
