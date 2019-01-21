@@ -195,13 +195,22 @@ header {
 	flex: 1;
 }
 .about-wrap-content__icon {
-	flex: none;
+	flex:none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 125px;
 	height: 125px;
 	border: 2px solid #f39c12;
 	background: #fff;
 	border-radius: 50%;
 	margin-right:  29px;
+}
+
+.about-wrap-content__icon i {
+	height: 40px;
+	font-size: 40px;
+	color: black;
 }
 
 .about-wrap-content__text h6 {
@@ -222,3 +231,149 @@ header {
 	margin-block-end: 25px;
 }
 
+.about__wrap-img {
+	position: relative;
+}
+
+.about__wrap-img__icon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	color: #fff;
+}
+/*box-skills*/
+
+.box-skills {
+	display: flex;
+	margin-top: 120px;
+
+}
+
+.box-skills__item {
+	flex: 1;
+	width: 50%;
+}
+
+.box-skills__item-img img{
+	display: inline-block;
+	max-width: 100%;
+	padding-right: 50px;
+	text-align: right;
+}
+
+.box-skills__item-content {
+	padding-left: 45px;
+}
+
+.box-skills__item-content .about-wrap-content {
+	margin-right: 0;
+}
+
+/*bars-line*/
+.box-bars {
+	margin-top: 55px;
+}
+.bars {
+	margin-bottom: 40px;
+}
+
+.bars:last-child{
+	margin-bottom: 0;
+}
+
+.bars__title {
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #0d0d0d;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+.bars__title span {
+	color: #bfbfbf;
+	font-weight: 600;
+}
+
+.bars__title span.digital {
+	color: #0d0d0d;
+	font-weight: 400;
+}
+
+.bars__line {
+	height: 10px;
+	background: #e7e7e7;
+}
+
+.bars__line div {
+	height: 10px;
+	background: #f49d09;
+}
+
+.section-bg {
+	height: 700px;
+	display: flex;
+	align-items: center;
+	background: url('../img/img-rotate.png') no-repeat center top;
+	background-size: cover;
+}
+
+/*quote */
+
+.quote {
+	padding: 250px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.quote__text { 
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 600;
+	position: relative;
+	padding: 0 70px;
+	margin-bottom: 40px;
+}
+.quote__text::before {
+	transform: rotate(180deg);
+	left: 0;
+	bottom: 80px;
+}
+
+.quote__text::after {
+	right: 0;
+}
+.quote__text::after, .quote__text::before {
+	content: '"';
+	position: absolute;
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 90px;
+	font-weight: 35px;
+	line-height: 45px;
+	font-style: italic;
+	top: 0;
+}
+
+.quote__author {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.quote__author::before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 4px;
+	background-color: #f39c12;
+	margin: 0 auto 20px;
+}
