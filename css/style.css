@@ -6,9 +6,14 @@ body {
 
 .wrapper {
 	max-width: 1250px;
+	width: 100%;
 	margin : 0 auto;
 	padding: 0 40px;
 
+}
+
+.padding105 {
+	padding: 105px 0px;
 }
 
 h1 {
@@ -139,10 +144,6 @@ header {
 	background: url('../img/banner.png') no-repeat center top;
 	height: 1100px;
 	text-align: center;
-}
-
-.about {
-	padding: 100px 0;
 }
 
 .heading {
@@ -381,10 +382,6 @@ header {
 
 /*box-team*/
 
-.box-team {
-	padding: 105px 0 100px;
-}
-
 .team-list {
 	display: flex;
 	justify-content: space-between;
@@ -468,4 +465,107 @@ header {
 	font-size: 16px;
 	line-height: 20px;
 	color: #737373;
+}
+
+.social {
+	margin-top: 15px;
+}
+.social__link {
+	color: #999999;
+	margin-right: 10px;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.social__link:last-child {
+	margin-right: 0px;
+}
+
+.social__link:hover  {
+	color : #f39c12;
+	transition: 1s ease;
+}
+
+.facts-list__item:hover .facts-list__icon {
+	border-color: #fff;
+	color: #f39c12;
+}
+
+.facts-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.facts-list__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 170px;
+	border: 2px solid #f39c12;
+	border-radius: 50%;
+	color: white;
+	font-size: 30px;
+	margin-bottom: 30px;
+	transition: all 0.5s;
+}
+
+.facts-list h5 {
+	font-size: 35px;
+	line-height: 29px;
+	color: #fff;
+	font-weight: 650;
+	text-align: center;
+}
+
+.facts-list h5 span {
+	font-size: 20px;
+	display: block;
+	line-height: 30px;
+}
+
+/*service*/
+.service {
+
+}
+
+.service-list {
+	display: flex;
+	text-align: center;
+	margin: 0 -15px;
+}
+
+.service-list__item {
+	padding-right: 15px;
+}
+
+.service-list__item:hover  .service-list__icon{
+	background: #f39c12;
+	color: white;
+}
+
+.service-list__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 105px;
+	height: 105px;
+	border: 2px solid #f39c12;
+	border-radius: 50%;
+	color: #131313;
+	font-size: 30px;
+	transition: all 0.5s;
+	font-size: 27px;
+	margin: 0 auto 30px;;
+}
+
+.service-list h6 {
+	margin-bottom: 23px;
+}
+
+.service-list p {
+	color: #737373;
+	font-size: 16px;
+	line-height: 28px;
 }
