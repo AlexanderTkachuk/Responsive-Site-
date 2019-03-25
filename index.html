@@ -33,6 +33,7 @@
     />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css">
   </head>
   <body>
     <header>
@@ -40,6 +41,11 @@
         <div class="header-wrap">
           <div class="logo"><a href="#">Mini</a></div>
           <div class="navigation">
+            <button class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <ul class="menu">
               <li class="menu__item">
                 <a href="#" class="menu__link">About</a>
@@ -67,12 +73,32 @@
 
     <section class="banner padding105">
       <div class="wrapper">
-        <h1>
-          Best Creative Studio
-          <span class="lg">Design / Branding / WordPres</span>
-          <span class="sm">We Make Great Ideas Happen</span>
-        </h1>
-        <a href="#" class="btn">Learn More</a>
+        <div class="banner-slider">
+          <div>
+              <h1>
+                Best Creative Studio
+                <span class="lg">Design / Branding / WordPres</span>
+                <span class="sm">We Make Great Ideas Happen</span>
+              </h1>
+              <a href="#" class="btn">Learn More</a>
+          </div>
+          <div>
+              <h1>
+                Best Creative Studio
+                <span class="lg">Design / Branding / WordPres</span>
+                <span class="sm">We Make Great Ideas Happen</span>
+              </h1>
+              <a href="#" class="btn">Learn More</a>
+          </div>
+          <div>
+              <h1>
+                Best Creative Studio
+                <span class="lg">Design / Branding / WordPres</span>
+                <span class="sm">We Make Great Ideas Happen</span>
+              </h1>
+              <a href="#" class="btn">Learn More</a>
+          </div>
+         </div>
       </div>
     </section>
 
@@ -397,14 +423,40 @@
 
     <section class="section-bg">
       <div class="wrapper">
-        <div class="testimonial">
-          <span class="quote__author"> Jhon Madeda </span>
-          <p class="comments">
-            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-            sem nibh id elit.”
-          </p>
-          <div class="photo"><img src="img/gilr_face2.png" alt="" /></div>
+        <div class="testimonial-slider">
+            <div>
+                <div class="testimonial">
+                    <span class="quote__author"> Jhon Madeda </span>
+                    <p class="comments">
+                      “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                      lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                      sem nibh id elit.”
+                    </p>
+                    <div class="photo"><img src="img/gilr_face2.png" alt="" /></div>
+                  </div>
+            </div>
+            <div>
+                <div class="testimonial">
+                    <span class="quote__author"> Jhon Madeda </span>
+                    <p class="comments">
+                      “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                      lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                      sem nibh id elit.”
+                    </p>
+                    <div class="photo"><img src="img/gilr_face2.png" alt="" /></div>
+                  </div>
+            </div>
+            <div>
+                <div class="testimonial">
+                    <span class="quote__author"> Jhon Madeda </span>
+                    <p class="comments">
+                      “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                      lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                      sem nibh id elit.”
+                    </p>
+                    <div class="photo"><img src="img/gilr_face2.png" alt="" /></div>
+                  </div>
+            </div>
         </div>
       </div>
     </section>
@@ -419,9 +471,25 @@
             id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
             mauris.
           </p>
-		</div>
+        </div>
+        
+        <div class="box-portfolio-slide">
+            <div class="portfolio-slider">
+                <div><a href="#"><img src="img/orange2.png" alt=""></a></div>
+                <div><a href="#"><img src="img/orange2.png" alt=""></a></div>
+                <div><a href="#"><img src="img/orange2.png" alt=""></a></div>
+              </div>
+              <div class="portfolio-slider__buttons"></div>
+      
+              <div class="portfolio-slider__footer">
+                  <div class="portfolio-list__title">project Title Here</div>
+                  <div class="portfolio-list__category">Graphics</div>
+                </div>
+              </div>
+        </div>
 		
         <div class="hr"></div>
+
 		
         <div class="tab-wrap">
           <ul class="nav-tab-list tabs">
@@ -448,9 +516,9 @@
             <div class="tab-cont" id="tab_1">
               <div class="portfolio-list">
                 <div class="portfolio-list__item">
-					<a href="#" class="portfolio-list__link"></a>
+                  <a href="#" class="portfolio-list__link"></a>
                   <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
                     <a href="#" class="portfolio-list__review"></a>
                   </div>
                   <div class="portfolio-list__footer">
@@ -459,9 +527,42 @@
                   </div>
                 </div>
                 <div class="portfolio-list__item">
-					<a href="#" class="portfolio-list__link"></a>
+                  <a href="#" class="portfolio-list__link"></a>
                   <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
+                    <a href="#" class="portfolio-list__review"></a>
+                  </div>
+                  <div class="portfolio-list__footer">
+                    <div class="portfolio-list__title">project Title Here</div>
+                    <div class="portfolio-list__category">Graphics</div>
+                  </div>
+                </div>
+                <div class="portfolio-list__item">
+					          <a href="#" class="portfolio-list__link"></a>
+                  <div class="portfolio-list__img">
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
+                    <a href="#" class="portfolio-list__review"></a>
+                  </div>
+                  <div class="portfolio-list__footer">
+                    <div class="portfolio-list__title">project Title Here</div>
+                    <div class="portfolio-list__category">Graphics</div>
+                  </div>
+                </div>
+                <div class="portfolio-list__item">
+					          <a href="#" class="portfolio-list__link"></a>
+                  <div class="portfolio-list__img">
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
+                    <a href="#" class="portfolio-list__review"></a>
+                  </div>
+                  <div class="portfolio-list__footer">
+                    <div class="portfolio-list__title">project Title Here</div>
+                    <div class="portfolio-list__category">Graphics</div>
+                  </div>
+                </div>
+                <div class="portfolio-list__item">
+					          <a href="#" class="portfolio-list__link"></a>
+                  <div class="portfolio-list__img">
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
                     <a href="#" class="portfolio-list__review"></a>
                   </div>
                   <div class="portfolio-list__footer">
@@ -483,7 +584,7 @@
                 <div class="portfolio-list__item">
 					<a href="#" class="portfolio-list__link"></a>
                   <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
                     <a href="#" class="portfolio-list__review"></a>
                   </div>
                   <div class="portfolio-list__footer">
@@ -494,40 +595,7 @@
                 <div class="portfolio-list__item">
 					<a href="#" class="portfolio-list__link"></a>
                   <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
-                    <a href="#" class="portfolio-list__review"></a>
-                  </div>
-                  <div class="portfolio-list__footer">
-                    <div class="portfolio-list__title">project Title Here</div>
-                    <div class="portfolio-list__category">Graphics</div>
-                  </div>
-                </div>
-                <div class="portfolio-list__item">
-					<a href="#" class="portfolio-list__link"></a>
-                  <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
-                    <a href="#" class="portfolio-list__review"></a>
-                  </div>
-                  <div class="portfolio-list__footer">
-                    <div class="portfolio-list__title">project Title Here</div>
-                    <div class="portfolio-list__category">Graphics</div>
-                  </div>
-                </div>
-                <div class="portfolio-list__item">
-					<a href="#" class="portfolio-list__link"></a>
-                  <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
-                    <a href="#" class="portfolio-list__review"></a>
-                  </div>
-                  <div class="portfolio-list__footer">
-                    <div class="portfolio-list__title">project Title Here</div>
-                    <div class="portfolio-list__category">Graphics</div>
-                  </div>
-                </div>
-                <div class="portfolio-list__item">
-					<a href="#" class="portfolio-list__link"></a>
-                  <div class="portfolio-list__img">
-                    <i class="fas fa-camera"></i>
+                    <img class="portfolio-list__photo-img" src="img/bridges.png" alt="">
                     <a href="#" class="portfolio-list__review"></a>
                   </div>
                   <div class="portfolio-list__footer">
@@ -763,8 +831,29 @@
         </div>
       </div>
     </section>
+    <section class="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper footer-flex">
+        <p class="copyrigth">
+          &copy; MINI 2014, All Right Reserves  |  Designed By bigpsfan & Metrothemes
+        </p>
+        <div class="social">
+          <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social__link"><i class="fab fa-internet-explorer"></i></a>
+          <a href="#" class="social__link"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social__link"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
   </body>
 </html>
